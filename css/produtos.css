@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+}
+
+/*NAVEGADOR*/
+.header-container {
+    width: 100%;
+    background-color: #171810;
+    height: 110px;
+    position: fixed;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 0;
+    display:flex;
+    justify-content: space-around;
+}
+
+nav::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 1px;
+    border-radius: 20px;
+
+
+}
+
+.nav-container {
+    position: fixed;
+    height: 200px;
+    top: 0;
+
+}
+
+.nav-container ul {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.nav-container li {
+    list-style: none;
+    float: left;
+    margin: 0 15px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: #666;
+    transition: .5s;
+    font-size: 20px;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+}
+
+.nav-container li a:hover {
+    color: #3381f3;
+}
+/*Carrinho*/
+.carrinho-img {
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 10px;
+    float: right;
+  
+}
+.nav-container-carrinho{
+    display: flex;
+    right: 20px;
+    position: fixed;
+    top: 0;
+    
+
+}
+.nav-container-carrinho ul{
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+    border-radius: 15px;
+}
+.nav-container-carrinho li{
+    list-style: none;
+    float: left;
+    
+}
+.nav-container-carrinho li a{
+    text-decoration: none;
+    color: #666;
+    transition: .5s;
+    font-size: 15px;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+}
+.nav-container-carrinho li a:hover{
+    color: #3381f3;
+}
+
+/*SubMenu Carrinho*/
+.nav-container-carrinho ul{
+    background-color: #171810;
+    color:#666;
+    
+}
+.nav-container-carrinho ul li a{
+    display: inline;
+    position: relative;
+    
+}
+.nav-container-carrinho ul ul{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+}
+.nav-container-carrinho ul li:hover ul{
+    display: block;
+    padding: 0;
+    padding-bottom: 0;
+    left: 1;
+    top: 20px;
+      
+}
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+   
+}
+.table-head-item{
+    text-align: start;
+    border: none;
+    border-top: 1px solid #3381f3;
+    border-bottom: 1px solid #3381f3;
+    padding: 2;
+    text-transform: uppercase;
+    
+}
+.second-col .thrid-col{
+    width: 26%;
+}
+.cart-product td{
+    padding: 10px 0;
+    border: none;
+    
+    
+}
+.product-identification{
+    display: flex;
+    align-items:center;
+}
+.cart-product-image{
+    width: 80px;
+    height: 90px;
+    margin-left: 10px;
+}
+.cart-product-title{
+    margin-left: 16px;
+    font-size: 18px;
+}
+.cart-product-price{
+    font-family: 'Amazon Ember', Arial, sans-serif ;
+}
+.product-qtd-input{
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid #3381f3 ;
+    text-align: center;
+    background-color: #b6acac;
+}
+.remove-product-button{
+    margin-left: 12px;
+    background-color: red;
+    color: white;
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+.remove-product-button:hover{
+    filter: brightness(0.8);  
+}
+.cart-total-container{
+    border-top: 1px solid #3381f3;
+    text-align: end;
+    padding: 1px 16px 0 0;
+    font-size: 18px;
+    border-bottom: none;
+    border-left: none ;
+    border-right: none;
+}
+.cart-total-container strong{
+    margin-right: 12px;
+}
+.purchase-button{
+    display: flex;
+    margin: 10px auto 0;
+    background-color: #3381f3;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+    margin-bottom: 10px;
+}
+.purchase-button:hover{
+    filter: brightness(0.8);
+}
+
+
+/*SubMenu*/
+.nav-container ul {
+    background-color: #171810;
+}
+
+.nav-container ul li a {
+    display: inline;
+    position: relative;
+
+}
+
+.nav-container ul ul {
+    display: none;
+    position: absolute;
+    width: 120px;
+    height: 290px;
+
+}
+
+.nav-container ul li:hover ul {
+    display: block;
+    padding: 0;
+    padding-bottom: 0;
+    left: 1;
+}
+
+/*PRODUTOS DIVERSOS*/ 
+.product-title{
+    padding-top: 30px;
+    align-items: center;
+    color: white;
+}
+.produtos-diversos {
+
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 100px;
+    display: flex;
+}
+
+.img-fundo {
+
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+    
+}
+
+.img-produto {
+    width: 100%;
+    height: 100%;
+
+}
+.discricao-produto {
+    color: #666;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    width: 100%;
+    font-size: 20px ;
+    padding-top: 55px;
+    margin-left: 40px;
+
+
+}
+
+.sobre-produto {
+    color: black;
+    font-size: 13px;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    width: 100%;
+    padding-top: 55px;
+    
+
+}
+
+.info-produtos {
+    margin-left: 30px;
+    padding-bottom: 50PX;
+    padding-top: 50px;
+
+}
+
+.info-produto {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 0.8rem;
+
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px 10px;
+}
+
+td {
+    text-align: center;
+}
+
+
+
+/*RODAPÉ*/
+
+.rodape{
+    background-color:#171810;
+    color: #666;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 11px;
+    position:relative;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    bottom: 0;
+
+}
+/* RESPONSIVIDADE*/
+
+@media(max-width:1280px){
+    .nav-container{
+        max-width: 460px;
+        position: absolute;
+        margin-top: 0;
+
+    }
+    .nav-container li{
+        list-style: none;
+        float: left;
+        margin: 0 5px;
+    }
+    .nav-container li a {
+        text-decoration: none;
+        color: #666;
+        transition: .5s;
+        font-size: 12px;
+        font-family: 'Amazon Ember', Arial, sans-serif;
+    }
+    .nav-container-carrinho{
+        max-width: 450px;
+        
+    }
+    .img-livro {
+        width: 100px;
+        height: 150px;
+        margin: 0;
+    
+    }
+    .img-informatica {
+        width: 100px;
+        height: 150px;
+        margin: 0;
+    
+    }
+    .img-game {
+        width: 100px;
+        height: 150px;
+        margin: 0;
+    
+    }
+    .discricao-produto {
+        color: #666;
+        font-family: "Amazon Ember", Arial, sans-serif;
+        width: 300px;
+        height: 250px;
+        padding-top: 50px;
+        font-size: 12px;
+    
+    }
+}
